@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Play:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'overpass', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.navbar {
+    position: fixed;
+    padding: 30px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    z-index: 99;
+}
+
+.nav-name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#nav-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.nav-title {
+    font-size: 50px;
+    font-family: 'play', sans-serif;
+    cursor: default;
+    color: white;
+}
+
+.page-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    font-family: 'overpass', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-links:hover {
+    color:  #BD582C;
+    border-bottom: 1px solid #BD582C;
+}
+
+.container1 {
+    width: 100%;
+    height: 65vh;
+    display: grid;
+    place-items: center;
+    cursor: default;
+}
+
+.background-img1 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: -99;
+    height: 100%;
+    width: 100%;
+    filter: brightness(30%);
+    pointer-events: none;
+}
+
+.page-title {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.main-logo {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.main-quote {
+    font-size: 100px;
+    color: #969696;
+    width: 70%;
+}
+
+.container2 {
+    padding: 50px;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.vids {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container2-vids {
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.container2-vids:hover {
+    height: 350px;
+    width: 450px;
+
+}
+
+.container-quotes {
+    font-size: 50px;
+    cursor: default;
+}
+
+.godlife-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: 1px solid #E48312;
+}
+
+.godlife-intro {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 400px;
+}
+
+.godlife-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.godlife-header {
+    font-size: 30px;
+}
+
+.godlife-description {
+    margin-left: 30px;
+    font-size: 27px;
+}
+
+.container3 {
+    padding: 80px;
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+}
+
+.meetings {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    text-align: left;
+}
+
+.meetings-intro {
+    text-align: center;
+}
+
+.meetings-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.meetings-header {
+    font-size: 30px;
+}
+
+.meetings-names {
+    font-size: 30px;
+}
+
+.meetings-text {
+    font-size: 25px;
+}
+
+.container4 {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    cursor: default;
+}
+
+.background-img2 {
+    position: absolute;
+    z-index: -99;
+    height: 100%;
+    width: 100%;
+    filter: brightness(30%);
+    pointer-events: none;
+}
+
+.container4-main {
+    padding: 50px;
+    margin-top: 80px;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 500px;
+    background-color: white;
+}
+
+.contact-header {
+    font-size: 60px;
+    width: 400px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+}
+
+.input-section {
+    width: 100%;
+}
+
+.inputs {
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 1px #3F3F3F;
+    outline-color: #E48312;
+    width: 100%;
+}
+
+#submit {
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    background-color: #3F3F3F;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#submit:hover {
+    background-color: #111111;
+}
+
+#error-name {
+    position: absolute;
+    font-size: 14px;
+    color: rgb(212, 84, 67);
+    margin-left: 10px;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: 0.3s ease;
+}
+
+#error-name.active {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+#error-email {
+    position: absolute;
+    font-size: 14px;
+    color: rgb(212, 84, 67);
+    margin-left: 10px;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: 0.3s ease;
+}
+
+#error-email.active {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+#success {
+    position: absolute;
+    font-size: 16px;
+    color: rgb(21, 145, 58);
+    margin-left: 10px;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: 0.3s ease;
+}
+
+#success.active {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.footer-logo {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.footer-icons {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer-icon {
+    color: black;
+    transition: 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #BD582C;
+}
